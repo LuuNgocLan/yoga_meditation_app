@@ -10,3 +10,4 @@ com.example.yoga_meditation_app-rs-8 /Users/ngoclan/yoga_meditation_app/build/ap
 com.example.yoga_meditation_app-mergeDebugResources-9 /Users/ngoclan/yoga_meditation_app/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
 com.example.yoga_meditation_app-mergeDebugResources-10 /Users/ngoclan/yoga_meditation_app/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
 com.example.yoga_meditation_app-merged_res-11 /Users/ngoclan/yoga_meditation_app/build/app/intermediates/merged_res/debug
+com.example.yoga_meditation_app-packaged_res-12 /Users/ngoclan/yoga_meditation_app/build/flutter_native_splash/intermediates/packaged_res/debug
