@@ -9,40 +9,48 @@ class GetStartedPage extends StatelessWidget {
     return SafeArea(
       top: false,
       child: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        backgroundColor: const Color(0xffF8F8F6),
+        body: Stack(
+          alignment: Alignment.bottomCenter,
           children: [
-            const Spacer(),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 24.0, top: 30.0, right: 24.0, bottom: 76.0),
-              child: Text(
-                "have_the_best",
-                // style: AppTextStyle.titleLarge,
-              ),
+            Image.asset(
+              'assets/images/img_started.png',
+              fit: BoxFit.fitWidth,
             ),
-            Row(
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(width: 24),
-                CommonButton(
-                  label: 'S.current.sign_up',
-                  isStrokeButton: true,
-                  onAction: () {},
-                  width: MediaQuery.of(context).size.width / 2 - 36.0,
+                const SizedBox(height: 60),
+                Text(
+                  'Have the best',
+                  style: Theme.of(context).textTheme.headlineLarge,
                 ),
-                const SizedBox(width: 24.0),
+                Text(
+                  'Yoga Experience',
+                  style: Theme.of(context)
+                      .textTheme
+                      .headlineLarge
+                      ?.copyWith(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 24),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: Text(
+                    'Transform your body and mind with our comprehensive yoga app. Discover expert-led classes, personalized routines',
+                    style: Theme.of(context).textTheme.bodyMedium,
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                const SizedBox(height: 32),
                 CommonButton(
-                  label: 'S.current.login',
+                  label: 'Start Journey',
                   onAction: () {},
-                  width: MediaQuery.of(context).size.width / 2 - 36.0,
+                  width: 240.0,
                 ),
                 const SizedBox(width: 24),
               ],
             ),
-            const SizedBox(height: 44.0),
           ],
         ),
       ),

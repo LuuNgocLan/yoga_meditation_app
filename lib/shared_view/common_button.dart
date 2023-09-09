@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:yoga_meditation_app/config/app_colors.dart';
-import 'package:yoga_meditation_app/config/app_text_style.dart';
 
 class CommonButton extends StatelessWidget {
   final VoidCallback? onAction;
@@ -26,29 +25,26 @@ class CommonButton extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 side: const BorderSide(color: AppColors.primary, width: 2),
                 shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                  borderRadius: BorderRadius.all(Radius.circular(60)),
                 ),
               ),
               onPressed: onAction,
-              child: labelButton(),
+              child: labelButton(context),
             )
           : FilledButton(
               style: FilledButton.styleFrom(
                 shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                  borderRadius: BorderRadius.all(Radius.circular(60)),
                 ),
               ),
               onPressed: onAction,
-              child: labelButton(),
+              child: labelButton(context),
             ),
     );
   }
 
-  Widget labelButton() => Text(
+  Widget labelButton(BuildContext context) => Text(
         label,
-        style: const TextStyle(
-          fontSize: 20.0,
-          fontFamily: AppTextStyle.loraMedium,
-        ),
+        style: Theme.of(context).textTheme.labelLarge,
       );
 }
