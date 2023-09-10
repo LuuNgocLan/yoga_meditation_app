@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:yoga_meditation_app/config/app_images.dart';
+import 'package:yoga_meditation_app/routes/routes.dart';
 import 'package:yoga_meditation_app/shared_view/common_button.dart';
 
 class GetStartedPage extends StatelessWidget {
@@ -14,7 +16,7 @@ class GetStartedPage extends StatelessWidget {
           alignment: Alignment.bottomCenter,
           children: [
             Image.asset(
-              'assets/images/img_started.png',
+              AppImages.imgStarted,
               fit: BoxFit.fitWidth,
             ),
             Column(
@@ -45,7 +47,9 @@ class GetStartedPage extends StatelessWidget {
                 const SizedBox(height: 32),
                 CommonButton(
                   label: 'Start Journey',
-                  onAction: () {},
+                  onAction: () {
+                    Navigator.popAndPushNamed(context, Routes.home);
+                  },
                   width: 240.0,
                 ),
                 const SizedBox(width: 24),
