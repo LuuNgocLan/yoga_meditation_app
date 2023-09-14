@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:yoga_meditation_app/config/app_images.dart';
+import 'package:yoga_meditation_app/routes/routes.dart';
 import 'package:yoga_meditation_app/screens/home/widgets/pilate_item.dart';
 
 class HomePage extends StatelessWidget {
@@ -77,11 +78,15 @@ class HomePage extends StatelessWidget {
                     const SizedBox(height: 16.0),
                     ListView(
                       shrinkWrap: true,
-                      children: const [
-                        PilateItem(),
-                        PilateItem(),
-                        PilateItem(),
-                        PilateItem(),
+                      children: [
+                        PilateItem(
+                          onPressed: () {
+                            Navigator.pushNamed(context, Routes.playMusic);
+                          },
+                        ),
+                        const PilateItem(),
+                        const PilateItem(),
+                        const PilateItem(),
                       ],
                     )
                   ],

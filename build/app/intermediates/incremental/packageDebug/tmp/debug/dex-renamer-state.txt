@@ -1,4 +1,4 @@
-#Sun Sep 10 22:46:28 ICT 2023
+#Thu Sep 14 23:42:55 ICT 2023
 base.0=/Users/ngoclan/yoga_meditation_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
