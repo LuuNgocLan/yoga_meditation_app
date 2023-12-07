@@ -34,10 +34,9 @@ class CaloriesChartPainter extends CustomPainter {
     final xAxisStep = canvasWidth / data.length;
 
     // Draw label xAxis
-    final textPainter = TextPainter(
-      textDirection: TextDirection.ltr,
-      textAlign: TextAlign.center,
-    );
+    final textPainter = TextPainter()
+      ..textDirection = TextDirection.ltr
+      ..textAlign = TextAlign.center;
     // initial the x-coordinate and y-coordinate of first point
     var xValue = 0.0;
 

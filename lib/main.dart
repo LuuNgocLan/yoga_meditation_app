@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:yoga_meditation_app/config/app_colors.dart';
 import 'package:yoga_meditation_app/config/app_typography.dart';
+import 'package:yoga_meditation_app/generated/l10n.dart';
 import 'package:yoga_meditation_app/routes/routes.dart';
 
 void main() {
@@ -36,13 +37,13 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Lora-Regular',
         textTheme: AppTypography.textTheme,
       ),
-      // localizationsDelegates: const [
-      //   S.delegate,
-      //   GlobalMaterialLocalizations.delegate,
-      //   GlobalWidgetsLocalizations.delegate,
-      //   GlobalCupertinoLocalizations.delegate,
-      // ],
-      // supportedLocales: S.delegate.supportedLocales,
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
       initialRoute: Routes.started,
       routes: Routes.routes,
     );

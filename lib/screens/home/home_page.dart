@@ -69,19 +69,22 @@ class HomePage extends StatelessWidget {
                       ),
                       height: 173.0,
                       width: double.infinity,
-                      child: CustomPaint(
-                        painter: CaloriesChartPainter(
-                          pathColor: AppColors.primary,
-                          pathWidth: 4.0,
-                          data: [
-                            Calories(day: 'Mon', calories: 70),
-                            Calories(day: 'Tue', calories: 40),
-                            Calories(day: 'Wed', calories: 37),
-                            Calories(day: 'Thu', calories: 28),
-                            Calories(day: 'Fri', calories: 42),
-                            Calories(day: 'Sat', calories: 7),
-                            Calories(day: 'Sun', calories: 61),
-                          ],
+                      child: Center(
+                        child: CustomPaint(
+                          size: const Size(double.infinity, 173.0),
+                          painter: CaloriesChartPainter(
+                            pathColor: AppColors.primary,
+                            pathWidth: 4.0,
+                            data: [
+                              Calories(day: 'Mon', calories: 70),
+                              Calories(day: 'Tue', calories: 40),
+                              Calories(day: 'Wed', calories: 37),
+                              Calories(day: 'Thu', calories: 28),
+                              Calories(day: 'Fri', calories: 42),
+                              Calories(day: 'Sat', calories: 7),
+                              Calories(day: 'Sun', calories: 61),
+                            ],
+                          ),
                         ),
                       ),
                     ),
