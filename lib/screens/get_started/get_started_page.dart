@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yoga_meditation_app/config/app_images.dart';
+import 'package:yoga_meditation_app/generated/l10n.dart';
 import 'package:yoga_meditation_app/routes/routes.dart';
 import 'package:yoga_meditation_app/shared_view/common_button.dart';
 
@@ -25,11 +26,11 @@ class GetStartedPage extends StatelessWidget {
               children: [
                 const SizedBox(height: 60),
                 Text(
-                  'Have the best',
+                  S.current.have_the_best,
                   style: Theme.of(context).textTheme.headlineLarge,
                 ),
                 Text(
-                  'Yoga Experience',
+                  S.current.yoga_experience,
                   style: Theme.of(context)
                       .textTheme
                       .headlineLarge
@@ -39,14 +40,14 @@ class GetStartedPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: Text(
-                    'Transform your body and mind with our comprehensive yoga app. Discover expert-led classes, personalized routines',
+                    S.current.start_content,
                     style: Theme.of(context).textTheme.bodyMedium,
                     textAlign: TextAlign.center,
                   ),
                 ),
                 const SizedBox(height: 32),
                 CommonButton(
-                  label: 'Start Journey',
+                  label: S.current.start_journey,
                   onAction: () {
                     Navigator.popAndPushNamed(context, Routes.home);
                   },

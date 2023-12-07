@@ -23,9 +23,19 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "have_the_best": MessageLookupByLibrary.simpleMessage("Have the best"),
+        "let_start_basic":
+            MessageLookupByLibrary.simpleMessage("Let’s start basic"),
+        "namaste": MessageLookupByLibrary.simpleMessage("Namaste,"),
+        "now_playing": MessageLookupByLibrary.simpleMessage("Now Playing"),
+        "recommended_courses":
+            MessageLookupByLibrary.simpleMessage("Recommended Courses"),
+        "relaxing_music":
+            MessageLookupByLibrary.simpleMessage("Relaxing Music"),
         "start_content": MessageLookupByLibrary.simpleMessage(
             "Transform your body and mind with our comprehensive yoga app. Discover expert-led classes, personalized routines"),
         "start_journey": MessageLookupByLibrary.simpleMessage("start Journey"),
+        "yoga_and_meditation":
+            MessageLookupByLibrary.simpleMessage("yoga and meditation"),
         "yoga_experience":
             MessageLookupByLibrary.simpleMessage("yoga experience")
       };

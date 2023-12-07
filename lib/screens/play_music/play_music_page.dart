@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:yoga_meditation_app/config/app_images.dart';
+import 'package:yoga_meditation_app/generated/l10n.dart';
 
 class PlayMusicPage extends StatelessWidget {
   const PlayMusicPage({Key? key}) : super(key: key);
@@ -59,14 +60,14 @@ class PlayMusicPage extends StatelessWidget {
             ),
             const SizedBox(height: 24.0),
             Text(
-              'Relaxing Music',
+              S.current.relaxing_music,
               style: Theme.of(context)
                   .textTheme
                   .titleMedium
                   ?.copyWith(fontWeight: FontWeight.bold),
             ),
             Text(
-              'Now Playing',
+              S.current.now_playing,
               style: Theme.of(context)
                   .textTheme
                   .bodyLarge

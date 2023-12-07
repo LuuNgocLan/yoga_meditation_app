@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:yoga_meditation_app/config/app_colors.dart';
 import 'package:yoga_meditation_app/config/app_images.dart';
+import 'package:yoga_meditation_app/generated/l10n.dart';
 import 'package:yoga_meditation_app/routes/routes.dart';
 import 'package:yoga_meditation_app/screens/home/widgets/calories_chart_painter.dart';
 import 'package:yoga_meditation_app/screens/home/widgets/pilate_item.dart';
@@ -32,7 +33,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     const SizedBox(height: 60.0),
                     Text(
-                      'Namaste,',
+                      S.current.namaste,
                       style: Theme.of(context)
                           .textTheme
                           .headlineMedium
@@ -47,14 +48,14 @@ class HomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 102.0),
                     Text(
-                      'Let’s start basic',
+                      S.current.let_start_basic,
                       style: Theme.of(context)
                           .textTheme
                           .titleLarge
                           ?.copyWith(fontWeight: FontWeight.normal),
                     ),
                     Text(
-                      'yoga and meditation',
+                      S.current.yoga_and_meditation,
                       style: Theme.of(context)
                           .textTheme
                           .titleLarge
@@ -90,7 +91,7 @@ class HomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 20.0),
                     Text(
-                      'Recommended Courses',
+                      S.current.recommended_courses,
                       style: Theme.of(context)
                           .textTheme
                           .bodyMedium
